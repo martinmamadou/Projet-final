@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101010;
+}
+
+header {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+header nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+}
+header nav p {
+  font-weight: bold;
+  margin: 0 250px;
+  font-size: 2.3rem;
+  color: #FFF4D9;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  list-style: none;
+  margin: 0 70px;
+  transition: 0.3s ease;
+}
+header nav ul li li:hover {
+  background: #091215;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFF4D9;
+}
+header .overlay {
+  background: url(./../img/100-push-ups-a-day-featured-image-barbend.com_.jpg) no-repeat center/cover fixed;
+  height: 100vh;
+  flex-direction: column;
+  color: #FFF4D9;
+}
+@keyframes writting {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+header .overlay .fitzone {
+  text-shadow: 0 7px 7px black;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+  padding-top: 350px;
+  margin-left: 245px;
+  animation: writting 1s steps(40, end);
+}
+header .overlay p {
+  text-align: justify;
+  margin-left: 245px;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-style: oblique;
+  width: 30%;
+}
+
+main {
+  text-align: center;
+  margin: 0 auto;
+  width: 95vw;
+  min-height: 100vh;
+}
+main .title {
+  position: fixed;
+  z-index: -1;
+  visibility: hidden;
+}
+main .main-top {
+  text-align: center;
+  height: 80px;
+  min-height: 80px;
+  margin-bottom: 0px;
+  color: #FFF4D9;
+}
+main .main-top h2 {
+  position: relative;
+  top: -60px;
+  background: #294362;
+  height: 140px;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  color: #FFF4D9;
+  text-transform: capitalize;
+  font-size: 1.9rem;
+  font-weight: lighter;
+}
+main .recommendation {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 500px;
+  text-transform: capitalize;
+  padding: 20px;
+}
+main .recommendation h2 {
+  margin: 0 20px;
+  text-align: left;
+  color: #FFF4D9;
+}
+main .recommendation span {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #27596A;
+  color: #FFF4D9;
+  margin: 20px;
+  padding: 0 50px;
+  height: 350px;
+  border-radius: 50px;
+  box-shadow: 0px 10px 13px -7px #000000;
+}
+main .recommendation span h3 {
+  font-size: 2rem;
+}
+main .recommendation span button {
+  display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+main .recommendation .first {
+  background: url(./../img/oYDbf5hQAePHEBNZTQMXRA.jpeg) no-repeat center/cover;
+}
+main .recommendation .second {
+  background: url(./../img/pull-ups-or-chin-ups-1.jpeg) no-repeat center/cover;
+}
+main .recommendation .third {
+  background: url(./../img/30-Minute-Leg-Workout.jpeg) no-repeat center/cover;
+}
+main .recommendation button {
+  border: thin solid #294362;
+  border-radius: 4px;
+  width: 120px;
+  height: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #FFF4D9;
+  background: none;
+  transition: 0.3s ease;
+}
+main .recommendation button :hover {
+  background: #294362;
+  color: #000000;
+  transform: scale(1.1);
+}
+main .programme {
+  margin: 0 auto;
+  display: flex;
+  padding: 0 20px;
+  width: 90vh;
+}
+main .programme .creer {
+  background: #294362;
+  flex: 1;
+}
+main .programme .prog {
+  background: #294362;
+  flex: 1;
+}/*# sourceMappingURL=index.css.map */

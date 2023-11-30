@@ -1,0 +1,196 @@
+$color1:#FFF4D9;
+$color2:#294362;
+
+
+*{
+    margin: 0;
+    padding:0; 
+    box-sizing: border-box;
+}
+
+body{
+    background: #101010;
+}
+header{
+    min-height: 100vh;
+    min-width: 100vw;
+    nav{
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100vw;
+        p{
+            font-weight: bold;
+            margin: 0 250px;
+            font-size: 2.3rem;
+            color: #FFF4D9;
+        }
+        ul{
+            display: flex;
+            li{
+                display: flex;
+                align-items: center;
+                height: 60px;
+                list-style: none;
+                margin: 0 70px;
+                transition: 0.3s ease;
+                li:hover{
+                    background: #091215;
+                }
+                a{
+                    text-decoration: none;
+                    font-weight: 600;
+                    color: $color1;
+                }
+            }
+        }
+       
+    }
+    .overlay{
+        background: url(./../img/100-push-ups-a-day-featured-image-barbend.com_.jpg)no-repeat center/cover fixed;
+        height: 100vh;
+        flex-direction: column;
+        color: $color1;
+        @keyframes writting {
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
+        .fitzone{
+            text-shadow: 0 7px 7px black;
+            text-transform: uppercase;
+            font-size: 5rem;
+            font-weight: bold;
+            padding-top: 350px;
+            margin-left: 245px;
+            animation: writting 1s steps(40,end);
+          
+            
+        }
+        p{
+            text-align: justify;
+            margin-left: 245px;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            font-style: oblique;
+            width: 30%;
+        }
+    }
+    
+}
+main{
+    text-align: center;
+    margin: 0 auto;
+    width: 95vw;
+    min-height: 100vh;
+    .title{
+        position: fixed;
+        z-index: -1;
+        visibility: hidden;
+    }
+    .main-top{
+        text-align: center;
+        height: 80px;
+        min-height: 80px;
+        margin-bottom:0px ;
+        color: $color1;
+        h2{
+            position: relative;
+            top: -60px;
+            background: $color2;
+            height: 140px;
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            color: $color1;
+            text-transform: capitalize;
+            font-size: 1.9rem;
+            font-weight: lighter;
+        }
+    }
+    .recommendation{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        min-height: 500px;
+        text-transform: capitalize;
+        padding: 20px;
+        h2{
+            margin: 0 20px;
+            text-align: left;
+            color: $color1;
+        }
+        span{
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #27596A;
+            color: $color1;
+            margin: 20px;
+            padding: 0 50px;
+            height: 350px;
+            border-radius: 50px;
+            box-shadow: 0px 10px 13px -7px #000000;
+            h3{
+                font-size: 2rem;
+            }
+            button{
+                display: block;
+                border: none;
+                background: none;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+        }
+        .first{
+            background: url(./../img/oYDbf5hQAePHEBNZTQMXRA.jpeg) no-repeat center/cover;
+            
+        }
+        .second{
+            background: url(./../img/pull-ups-or-chin-ups-1.jpeg) no-repeat center/cover;
+        }
+        .third{
+            background: url(./../img/30-Minute-Leg-Workout.jpeg) no-repeat center/cover;
+        }
+        button{
+            border: thin solid $color2;
+            border-radius: 4px;
+            width: 120px;
+            height: 35px;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: $color1;
+            background: none;
+            transition: 0.3s ease;
+            :hover{
+                background: $color2;
+                color: #000000;
+                transform: scale(1.1);
+            }
+        }
+    }
+    .programme{
+        margin: 0 auto;
+        display: flex;
+        padding: 0 20px;
+        width: 90vh;
+        .creer{
+            background: $color2;
+            flex: 1;
+        }
+        .prog{
+            background: $color2;
+            flex: 1;
+        }
+    }
+}
