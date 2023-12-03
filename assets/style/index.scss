@@ -1,5 +1,7 @@
 $color1:#FFF4D9;
 $color2:#294362;
+$panel:#223853;
+
 
 
 *{
@@ -7,13 +9,16 @@ $color2:#294362;
     padding:0; 
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
-    background: #101010;
+    background: #101011;
 }
 header{
     min-height: 100vh;
-    min-width: 100vw;
+    max-width: 100vw;
     nav{
         height: 60px;
         display: flex;
@@ -29,6 +34,8 @@ header{
             margin: 0 250px;
             font-size: 2.3rem;
             color: #FFF4D9;
+            animation: writting 1s;
+            
         }
         ul{
             display: flex;
@@ -46,6 +53,7 @@ header{
                     text-decoration: none;
                     font-weight: 600;
                     color: $color1;
+                    
                 }
             }
         }
@@ -96,7 +104,7 @@ main{
         z-index: -1;
         visibility: hidden;
     }
-    .main-top{
+    /*.main-top{
         text-align: center;
         height: 80px;
         min-height: 80px;
@@ -115,82 +123,168 @@ main{
             text-transform: capitalize;
             font-size: 1.9rem;
             font-weight: lighter;
-        }
+        }*/
     }
     .recommendation{
-        justify-content: center;
-        align-items: center;
-        display: flex;
         min-height: 500px;
         text-transform: capitalize;
         padding: 20px;
+        
         h2{
-            margin: 0 20px;
-            text-align: left;
+            text-align: center;
+            font-size: 4em;
+            text-transform: uppercase;
             color: $color1;
+            text-shadow: 3px 5px 2px black;
+           
         }
-        span{
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #27596A;
-            color: $color1;
-            margin: 20px;
-            padding: 0 50px;
-            height: 350px;
-            border-radius: 50px;
-            box-shadow: 0px 10px 13px -7px #000000;
-            h3{
-                font-size: 2rem;
+        .push ,.pull,.leg{
+            
+            padding: 60px;
+            background: $color2;
+            height: 80vh;
+            background: url(./../img/100-push-ups-a-day-featured-image-barbend.com_.jpg) no-repeat center/cover fixed ; 
+            background-position:-200px ;
+            background-size: 50vw ;
+        }
+        .pull{
+            background: url(./../img/beginner_pullups.jpeg) center/cover no-repeat fixed;
+            background-position: 1100px;
+            background-size: 50vw;
+            overflow: hidden;
+        }
+        .leg{
+            background: url(./../img/30-Minute-Leg-Workout.jpeg) no-repeat center/cover fixed;
+            background-position: -250px;
+            background-size: 50vw;
+        }
+        .container{
+            
+            overflow: hidden;
+            margin: 20px 0;
+            .accordion-container{
+                margin: 100px 0;
+                overflow: hidden;
             }
-            button{
-                display: block;
-                border: none;
-                background: none;
-                cursor: pointer;
+            }
+                .accordion{
+                    filter: none;
+        
+                    color: $color1;
+                    display: block;
+                   width: 70%;
+                   margin: 0 auto;
+                   height: 70px;
+                   text-align: left;
+                   padding: 0 20px;
+                   outline: none;
+                   background: none;
+                   text-align: center;
+                   font-weight: 600;
+                   font-size: 1.2em;
+                   text-shadow: 3px 5px 2px black;
+                   border: none;
+                   border-bottom: solid thin ;
+                   transition: 0.3s ease;
+            }
+            .active , .accordion:hover{
+                filter: none !important;
+                background: $color2;
+                border: solid thin;
+                font-weight: bold;
                 text-transform: uppercase;
             }
-        }
-        .first{
-            background: url(./../img/oYDbf5hQAePHEBNZTQMXRA.jpeg) no-repeat center/cover;
-            
-        }
-        .second{
-            background: url(./../img/pull-ups-or-chin-ups-1.jpeg) no-repeat center/cover;
-        }
-        .third{
-            background: url(./../img/30-Minute-Leg-Workout.jpeg) no-repeat center/cover;
-        }
-        button{
-            border: thin solid $color2;
-            border-radius: 4px;
-            width: 120px;
-            height: 35px;
-            text-transform: capitalize;
-            font-weight: bold;
-            color: $color1;
-            background: none;
-            transition: 0.3s ease;
-            :hover{
-                background: $color2;
-                color: #000000;
-                transform: scale(1.1);
+            .panel{
+                background: $panel;
+                color: #FFF4D9;
+                width: 70%;
+                margin: 0 auto;
+                text-align: left;
+                padding: 0 20px;
+                display: none;
+                overflow: hidden;
+                li{
+                    list-style: none;
+                    margin: 10px 0;
+                }
             }
-        }
+            .programme{
+                margin: 150px;
+                .titre{
+                    height: 40vh;
+                    margin: 350px 100px 200px;
+                    i{
+                        border: solid thin ;
+                        border-radius: 50%;
+                        padding: 10px;
+                        margin: 50px;
+                        animation: arrow 1s infinite;
+                        :hover{
+                            background: $color2;
+                        }
+                    }
+                    @keyframes arrow {
+                        0%{
+                            top: 0;
+                        }
+                        50%{
+                            bottom: 10px;
+                        }
+                        100%{
+                            top: 0;
+                        }
+                    }
+                }
+                .pro-container{
+                    display: flex;
+                    h2{
+                        text-shadow: none;
+                        font-size: 3em;
+                    }
+                    button{
+                        background: none;
+                        border:none;
+                        margin: 50px 0;
+                        cursor: pointer;
+                        transition: 0.3s ease;
+                        :hover{
+                            border: solid thin;
+                            background: #101011;
+                            transform: scale(1.3);
+                            padding: 3px;
+                        }
+                    }
+                    .creer{
+                        background: $color2;
+                        flex: 1;
+                        height: 200px;
+                    }
+                    .prog{
+                        background: $color1;
+                        flex: 1;
+                        h2{
+                        text-shadow: none;
+                        color: $color2;}
+                    }
+                }
+            }
+}
+footer{
+    background: $color2;
+    max-height: 50vh;
+    display: flex;
+    .logo-foot{
+        background: $color1;
+        flex: 0.2;
+    #foot-img{
+        width: 100%;
     }
-    .programme{
-        margin: 0 auto;
-        display: flex;
-        padding: 0 20px;
-        width: 90vh;
-        .creer{
-            background: $color2;
-            flex: 1;
-        }
-        .prog{
-            background: $color2;
-            flex: 1;
+    .message{
+        label, input{
+            display: block;
         }
     }
 }
+}
+    
+    

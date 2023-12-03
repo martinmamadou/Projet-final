@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/index.css">
+    <script src="./assets/js/index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Aceuil FitZone</title>
 </head>
@@ -28,26 +29,132 @@
         <div class="title">
         <h1>Acceuil</h1>
         </div>
-        <div class="main-top">
-            <h2>" Meme le dernier d'une course est devant celui qui ne court pas. "</h2>
-        </div>
         <div class="recommendation">
-            <h2>Recommendation</h2>
-            <span class="first">
-            <h3>Push-ups</h3>
-            <a href=""><button>je me lance</button></a>
-            </span >
-            <span class="second">
-            <h3>Pull-ups</h3>
-            <a href=""><button>je me lance</button></a>
-            </span>
-            <span class="third">
-            <h3>Legs</h3>
-            <a href=""><button>je me lance</button></a>
-            </span>
-            <a href=""><button>Voir plus</button></a>
+            <div class="push">
+                <h2>Section Push</h2>
+                <div class="container">
+                    <div class="accordion-container">
+                        <button class="accordion">Mes premieres pompes</button>
+                        <div class="panel">
+                            <h3>resumé</h3>
+                            <ul>
+                                <li>Pompes genoux</li>
+                                <li>pompes</li>
+                                <li>pompes isometriques</li>
+                            </ul>
+                            <button>Voir Plus</button>
+                            </div>
+                        <button class="accordion">Pompes intermediaires</button>
+                        <div class="panel">
+                            <h3>resumé</h3>
+                            <ul>
+                                <li>Pompes</li>
+                                <li>pompes typewriter</li>
+                                <li>pompes hindu</li>
+                            </ul>
+                            <button>Voir Plus</button>
+                            </div>
+                        <button class="accordion">Defis 200pompes</button>
+                        <div class="panel">
+                            <h3>resumé</h3>
+                            <ul>
+                                <li>Pompes diamant</li>
+                                <li>pompes claqué</li>
+                                <li>pompes isometriques</li>
+                            </ul>
+                            <button>Voir Plus</button>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        <div class="pull">
+            <h2>section pull</h2>
+        
+            <div class="container" id="container-2">
+                <div class="accordion-container">
+                    <button class="accordion">Mes premieres traction</button>
+                    <div class="panel">
+                        <h3>resumé</h3>
+                        <ul>
+                            <li>traction iso</li>
+                            <li>tracion</li>
+                            <li>gainage</li>
+                        </ul>
+                        <button>Voir Plus</button>
+                        </div>
+                    <button class="accordion">Traction intermediares</button>
+                    <div class="panel">
+                        <h3>resumé</h3>
+                        <ul>
+                            <li>traction</li>
+                            <li>traction typewriter</li>
+                            <li>traction claqué</li>
+                        </ul>
+                        <button>Voir Plus</button>
+                        </div>
+                    <button class="accordion">Defis 200 traction</button>
+                    <div class="panel">
+                        <h3>resumé</h3>
+                        <ul>
+                            <li>traction</li>
+                            <li>traction supplination</li>
+                            <li>traction</li>
+                        </ul>
+                        <button>Voir Plus</button>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
         </div>
+        <div class="leg">
+            <h2>section leg</h2>
+        
+            <div class="container" id="container-2">
+                <div class="accordion-container">
+                    <button class="accordion">Jambes debutant</button>
+                    <div class="panel">
+                        <h3>resumé</h3>
+                        <ul>
+                            <li>squats</li>
+                            <li>fente</li>
+                            <li>monté de genoux</li>
+                        </ul>
+                        <button>Voir Plus</button>
+                        </div>
+                    <button class="accordion">Jambes-intermediaires</button>
+                    <div class="panel">
+                        <h3>resumé</h3>
+                        <ul>
+                            <li>Squat sumo</li>
+                            <li>Squats sautées</li>
+                            <li>Fentes sautées</li>
+                        </ul>
+                        <button>Voir Plus</button>
+                        </div>
+                    <button class="accordion">Jambes-avancées</button>
+                    <div class="panel">
+                        <h3>resumé</h3>
+                        <ul>
+                            <li>Squats-pistol</li>
+                            <li>Squats iso</li>
+                            <li>Fentes sautées</li>
+                        </ul>
+                        <button>Voir Plus</button>
+
+                    </div>
+                </div>
+            </div> 
+        </div>   
         <div class="programme">
+            <div class="titre">
+                <h2>Show us your way</h2>
+                <a href="#programme"><i class="fa-solid fa-angle-down" style="color: #FFF4D9;"></i></a>
+            </div>
+            <div class="pro-container" id="programme">
             <div class="creer">
             <h2>Créer mon Programme</h2>
             <span><button><i class="fa-solid fa-plus"></i></button></span>
@@ -59,7 +166,31 @@
                     <button><i class="fa-solid fa-plus"></i>
                 </span>
             </div>
+            </div>
         </div>
     </main>
+    <footer>
+        <div class="logo-foot">
+            <img id="foot-img" src="./assets/img/Free_Sample_By_Wix__1_-removebg-preview.png" alt="">
+        </div>
+        <div class="message">
+            <form action="">
+               
+                        <label for="name">Nom : </label></td>
+                        <input type="text" name="name" id="name"></td>
+                    
+                        <label for="mail">Email : </label></td>
+                        <input type="text" name="mail" id="mail"></td>
+                    
+                        <label for="text">votre message : </label></td>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message : "></textarea></td>
+                    </tr>
+            
+        </form>
+        </div>
+        <div class="social">
+            <h3>ou nous suivre</h3>
+        </div>
+    </footer>
 </body>
 </html>
